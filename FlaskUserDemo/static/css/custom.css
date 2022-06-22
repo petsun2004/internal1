@@ -1,0 +1,15 @@
+table {
+    border-collapse: collapse;
+}
+th, td {
+    border: 0.5px solid black;
+}
+tr:nth-child(2n) {
+    background-color: lightgrey;
+}
+
+img {
+    border-radius: 50%;
+    aspect-ratio: 1;
+    object-fit: cover;
+}

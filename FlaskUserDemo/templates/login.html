@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %}{% endblock %}</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/custom.css') }}">
+</head>
+<body>
+
+    {% extends '_layout.html' %}
+
+    {% block title %}Login{% endblock %}
+    <h1>welcome to subject selection</h1>
+    <p>please login first</p>
+    <div class="container">
+        <form name="form1" class="box">
+            <input type="email" name="email" placeholder="Email" autocomplete="off" required>
+            <input type="password" name="password" placeholder="Password" autocomplete="off" required>
+            <input type="submit" value="Sign in" class="submit">
+            <!--avatar-->
+            <div class="avatar">
+                <div class="hair1"></div>
+                <div class="hair2"></div>
+                <div class="hair3"></div>
+                <div class="clothes">
+                    <div class="buttons1"></div>
+                    <div class="buttons2"></div>
+                </div>
+                <div class="head"></div>
+                <div class="neck"></div>
+                <div class="eyebrow-left"></div>
+                <div class="eyebrow-right"></div>
+                <div class="eye-left"></div>
+                <div class="eye-right"></div>
+                <div class="nose"></div>
+                <div class="smile1"></div>
+                <div class="smile2"></div>
+                <div class="smile3"></div>
+                <div class="blush1"></div>
+                <div class="blush2"></div>
+            </div>
+        </form>
+        <a href="#" class="signUp">Not a Member? Sign up</a>
+    </div>
+
+    {% block content %}
+
+    {% endblock %}
+
+</body>
+</html>
